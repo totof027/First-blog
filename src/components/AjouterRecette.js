@@ -21,7 +21,8 @@ class AjouterRecette extends Component {
         Object.keys(recette).forEach(item => {
             recette[item] = ''
         })
-        this.setState({ ...recette }) 
+        this.setState({ ...recette })
+       
     }
     render () {
         return (
