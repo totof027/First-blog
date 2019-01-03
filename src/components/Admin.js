@@ -69,6 +69,7 @@ class Admin extends Component {
                     <h2>Tu n'es pas le chef de cette page.</h2>
                     {logout}
                 </div>
+                // Correction
             )
         }
         return (
