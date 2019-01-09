@@ -2,24 +2,24 @@ import React from 'react'
 import { Redirect } from 'react-router-dom'
 import withPlaceholder from '../hoc/withPlaceholder'
 
-class Connexion extends React.Component {
+class Connexion extends React.Component { 
   state = {
     pseudo: '',
     goToApp: false
   }
 
-  goToApp = event => {
+  goToApp = event => { // fonction avec un booleen pour acceder a l'app.
     event.preventDefault()
     this.setState({ goToApp: true })
   }
 
-  handleChange = event => {
+  handleChange = event => { // fonction pour valider un pseudo
     const pseudo = event.target.value
     this.setState({ pseudo })
   }
 
   render () {
-    if (this.state.goToApp) {
+    if (this.state.goToApp) { // Si le booleen est a true on redirect sur un url.
       return <Redirect push to={`/pseudo/${this.state.pseudo}`} />
     }
 
@@ -42,6 +42,7 @@ class Connexion extends React.Component {
   }
 }
 
+// Notions avancées avec le higher-order components de REACT.
 const WrappedComponent = withPlaceholder(Connexion)
 
 export default WrappedComponent

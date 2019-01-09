@@ -12,7 +12,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-const Root = () => (
+const Root = () => ( // on definie les routes de notre application .
   <Router>
     <Switch>
       <Route exact path='/' component={Connexion} />

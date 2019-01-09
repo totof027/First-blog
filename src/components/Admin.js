@@ -66,7 +66,7 @@ class Admin extends Component {
         if(this.state.uid !== this.state.chef){
             return(
                 <div>
-                    <h2>Tu n'es pas le chef de cette page.</h2>
+                    <h2>Tu n\'es pas le chef de cette page.</h2>
                     {logout}
                 </div>
                 // Correction
