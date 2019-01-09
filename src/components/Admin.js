@@ -63,15 +63,15 @@ class Admin extends Component {
         if(!this.state.uid){
             return <Login authenticate={this.authenticate}></Login>
         }
-        if(this.state.uid !== this.state.chef){
-            return(
-                <div>
-                    <h2>Tu n'es pas le chef de cette page.</h2>
-                    {logout}
-                </div>
-                // Correction
-            )
-        }
+        // if(this.state.uid !== this.state.chef){
+        //     return(
+        //         <div>
+        //             <h2>Tu n'es pas le chef de cette page.</h2>
+        //             {logout}
+        //         </div>
+        //         // Correction
+        //     )
+        // }
         return (
             <div className="cards">
                 <AjouterRecette ajouterRecette= {ajouterRecette}></AjouterRecette>
